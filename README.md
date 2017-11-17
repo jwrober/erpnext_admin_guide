@@ -2,6 +2,8 @@
 
 This is the ERPNext Administrator's Guide. All content in this guide is generated in markdown (MD) language. The purpose of this guide is to provide self-hosters of the [ERPNext](https://erpnext.org "ERPNext Website") system a place to capture tips and tricks on administering this complex platform.
 
+See [Contributing Guidelines](https://github.com/jwrober/erpnext_admin_guide/wiki/Contributing-Guidelines) if you would like to help maintain this guide.
+
 ## Table of Contents
 
 * 1 Preface
