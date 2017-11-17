@@ -16,10 +16,10 @@ Assuming the development environment is the same version as production (or very 
 
     cd erpnext-dev
     # restore the prod database snapshot taken, you will be prompted for the mysql root pwd
-    bench --force restore /
-        ../frappe-bench/sites/[site name]/private/backups/[sql.gz file]                    \
-        --with-public-files ../frappe-bench/.../private/backups/[files.tar file]           \     
-        --with-private-files ../frappe-bench/.../private/backups/[private_files.tar file]
+    bench --force restore                                                                                \
+        --with-public-files ../frappe-bench/sites/[site name]/private/backups/[files.tar file]           \     
+        --with-private-files ../frappe-bench/sites/[site name]/private/backups/[private_files.tar file]  \
+        ../frappe-bench/sites/[site name]/private/backups/[sql.gz file]
     # confirm the database schema matches the code, clear all cache and restart
     bench migrate
     bench clear-cahce
