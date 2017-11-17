@@ -43,7 +43,7 @@ For Red Hat based distributions (CentOS) start by installing a collection of sof
         xorg-x11-fonts-Type1 zlib-devel
     sudo shutdown -r now
 
-As a user with `sudoer` rights, run these commands to get:
+Now to create the `erpnext` user. Run these commands:
 
     sudo useradd -m erpnext
     sudo passwd erpnext
@@ -69,5 +69,7 @@ Now to remove `sudo` rights from the `erpnext` user
 
     exit
     sudo deluser erpnext [sudo group name]
+
+At this point the `erpnext` user should be an non-sudoer user and you will have an empty production environment running. Next step is to run the [Setup Wizard](../setup/setup.md "Setup").<br /><br />
 
 Previous: Next: [3.1.5 Software Packages Installed](software.md "Software Packages Installed") | Next: [3.2.1 Installation Troubleshooting](install-trouble.md "Installation Troubleshooting")

@@ -6,7 +6,7 @@ Frappe `bench` is more than a program written in python. It is a workhorse that 
 
 ERPNext should be [installed](install.md "Installing ERPNext") in a user directory on the Linux server and will run as that user. During installation this user should have `sudoer` rights, however after installation and in runtime in production envrionments this user should be unprivileged and should **not** have `sudoer` rights. The user must **not** be `root` either.
 
-Best practice is to logon to the server with a regular user that has `sudoer` rights. Don't logon as `root`. Use the `sudo` command to do any privileged work on the server. When working with `bench`, logon with the regular and `su` to the `erpnext` user like this:
+Best practice is to logon to the server with a regular user that has `sudoer` rights. Don't logon as `root`. Use the `sudo` command to do any privileged work on the server. When working with `bench`, logon with the regular user and `su` to the `erpnext` user like this:
 
     sudo su - erpnext
     cd frappe-bench

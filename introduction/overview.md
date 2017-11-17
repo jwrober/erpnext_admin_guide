@@ -10,8 +10,6 @@ From the ERPNext Documentation webite at [https://erpnext.org/docs](https://erpn
 
 > ERPNext is based on the Frappe Framework is highly customizable and extendable. You can create Custom Form, Fields, Scripts and can also create your own Apps to extend ERPNext functionality.
 
-> ERPNext is Open Source under the GNU General Public Licence v3 and has been listed as one of the Best Open Source Softwares in the world by many online blogs.
-
-TODO: This can be sourced from the same information and the regular user's guide. We can give modules, features, etc here.<br /><br />
+> ERPNext is Open Source under the GNU General Public Licence v3 and has been listed as one of the Best Open Source Softwares in the world by many online blogs.<br /><br />
 
 Previous: [1.4 Typograpghy](../preface/typography.md "Typography") | Next: [2.2 Getting Help](help.md "Getting Help")
