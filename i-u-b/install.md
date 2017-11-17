@@ -21,25 +21,25 @@ For Debian based distributions (Debian, Ubuntu) start by installing a collection
 
     sudo apt-get update
     sudo install -y build-essential curl dnsmasq fontconfig git git-man htop libcrypto++-dev \
-        libffi-dev libfreetype6-dev libjpeg62-turbo-dev libjpeg8-dev liblcms2-dev \
-        libmariadbclient-dev libssl-dev libtiff4-dev libtiff5-dev libwebp-dev libxext6 \
-        libxrender1 libxslt1-dev libxslt1.1 mariadb-client mariadb-common mariadb-server \
-        mysql-common nginx nginx-common nginx-full nodejs ntp postfix python-dev \
-        python-mysqldb python-pip python-selinux python-setuptools \
-        python-software-properties python-tk python2.7 python3 python3.4 redis-server \
-        redis-tools screen software-properties-common supervisor tcl8.5-dev tk8.5-dev \
+        libffi-dev libfreetype6-dev libjpeg62-turbo-dev libjpeg8-dev liblcms2-dev            \
+        libmariadbclient-dev libssl-dev libtiff4-dev libtiff5-dev libwebp-dev libxext6       \
+        libxrender1 libxslt1-dev libxslt1.1 mariadb-client mariadb-common mariadb-server     \
+        mysql-common nginx nginx-common nginx-full nodejs ntp postfix python-dev             \
+        python-mysqldb python-pip python-selinux python-setuptools                           \
+        python-software-properties python-tk python2.7 python3 python3.4 redis-server        \
+        redis-tools screen software-properties-common supervisor tcl8.5-dev tk8.5-dev        \
         vim wget which xfonts-75dpi xfonts-base zlib1g-dev 
     sudo shutdown -r now
 
 For Red Hat based distributions (CentOS) start by installing a collection of software dependancies:
 
     sudo yum install -y epel-release
-    sudo yum install -y bzip2-devel cronie curl freetype-devel git groupinstall \
-        lcms2-devel libXext libXrender libffi-devel libjpeg-devel libselinux-python \
-        libtiff-devel libwebp-devel libxml2 libxml2-devel libxslt libxslt-devel \
-        libzip-devel mariadb-devel mariadb-server nginx nodejs npm openssl-devel \
-        postfix python-2.7.5 python-devel python-setuptools redhat-lsb-core redis \
-        sudo supervisor tcl-devel tk-devel wget which xorg-x11-fonts-75dpi \
+    sudo yum install -y bzip2-devel cronie curl freetype-devel git groupinstall      \
+        lcms2-devel libXext libXrender libffi-devel libjpeg-devel libselinux-python  \
+        libtiff-devel libwebp-devel libxml2 libxml2-devel libxslt libxslt-devel      \
+        libzip-devel mariadb-devel mariadb-server nginx nodejs npm openssl-devel     \
+        postfix python-2.7.5 python-devel python-setuptools redhat-lsb-core redis    \
+        sudo supervisor tcl-devel tk-devel wget which xorg-x11-fonts-75dpi           \
         xorg-x11-fonts-Type1 zlib-devel
     sudo shutdown -r now
 

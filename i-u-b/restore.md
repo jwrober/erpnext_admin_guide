@@ -4,10 +4,10 @@ Assuming you have a good [simple backup](backup.md "Backing Up ERPNext"), you ca
 
     sudo su - erpnext
     cd frappe-bench/
-    bench --force restore \
-        sites/[site name]/private/backups/[sql.gz file] \
-        --with-public-files sites/[site name]/private/backups/[files.tar]
-        --with-private-files sites/[site name]/private/backups/[private-files.tar]
+    bench --force restore                                                          \
+        --with-public-files sites/[site name]/private/backups/[files.tar]          \
+        --with-private-files sites/[site name]/private/backups/[private-files.tar] \
+        sites/[site name]/private/backups/[sql.gz file]
 
 This should bring your system's database and files configuration back to the point in time the backup was taken.<br /><br />
 

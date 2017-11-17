@@ -1,6 +1,6 @@
 ### 3.1.3 The Wonderful World of git
 
-`git` is a software code revision/version control system. The popular GitHub website hosts `git` repositories online for projects such as ERPNext and this administrators guide to reside in. Administrators for companies that want to host thier own repositories can do so, especially those that do not want thier code public.
+`git` is a software code revision/version control system. The popular GitHub website hosts `git` repositories online for projects such as ERPNext and this administrators guide to reside in. Administrators for companies that want to host their own repositories can do so, especially those that do not want thier code public.
 
 As mentioned before, ERPNext is hosted in an GitHub repository at [https://github.com/frappe/erpnext](https://github.com/frappe/erpnext "ERPNext GitHub Repo"). The Frappe `bench` system will download the ERPNext repository and others as needed with a `clone ` operation. The `bench update` command, redownloads the latest code and upgrades ERPNext to the most current version. See [3.3 Upgrading ERPNext](upgrade.md "Upgrading ERPNext").
 

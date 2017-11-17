@@ -1,6 +1,6 @@
 ## 3.3 Upgrading ERPNext
 
-In this section we go over steps to upgrade ERPNext. One of the things that comes up very often on the [Discussion Forum](https://discuss.erpnext.com/ "ERPNext Discussion Forum") is upgrade issues. So besides installation issues, the author would say that the second most often cries for help are from challenges related to upgrading ERPNext. What is interesting is in most cases the administrator is the one who caused their issue because they didn't take the time to be prepared and get setup in a way to allow them plenty of flexibilty to upgrade is a safe evironment.
+In this section we go over steps to upgrade ERPNext. One of the things that comes up very often on the [Discussion Forum](https://discuss.erpnext.com/ "ERPNext Discussion Forum") is upgrade issues. So besides installation issues, the author would say that the second most often cries for help are from challenges related to upgrading ERPNext. What is interesting is in most cases the administrator is the one who caused their issue because they didn't take the time to be prepared and get setup in a way to allow them plenty of flexibilty to upgrade in a safe evironment.
 
 What is this "flexibility"?  It's very simple. **ONLY UPGRADE IN A DEVELOPMENT/NON-PRODUCTION ENVIRONMENT FIRST.**
 
@@ -17,8 +17,8 @@ Assuming the development environment is the same version as production (or very 
     cd erpnext-dev
     # restore the prod database snapshot taken, you will be prompted for the mysql root pwd
     bench --force restore /
-        ../frappe-bench/sites/[site name]/private/backups/[sql.gz file] /
-        --with-public-files ../frappe-bench/.../private/backups/[files.tar file] /
+        ../frappe-bench/sites/[site name]/private/backups/[sql.gz file]                    \
+        --with-public-files ../frappe-bench/.../private/backups/[files.tar file]           \     
         --with-private-files ../frappe-bench/.../private/backups/[private_files.tar file]
     # confirm the database schema matches the code, clear all cache and restart
     bench migrate
@@ -68,7 +68,7 @@ This is often when things go wrong. Refer to [3.3.4 Upgrade Troubleshooting](upg
 
 Congratulations! Your non-production environment has been upgraded to the latest and greatest. Now you need to go into the user interface and test, test and test some more. Did I mention you need to test? Take the time to ensure that every feature of the system your company uses works as expected! Get some help from your fellow employees that are power users. The effort you take now will pay off in the long run.
 
-Once all testing is finished, the upgrade of the production site is the same commands as upgrading the non-production site. Just replace `erpnext-dev` with `frappe-bench` and you are all set. Don't forget to take a [full backup](backup.md "Backing Up ERPNext") and then `tar` the whole thing just in case something goes wrong.
+Once all testing is finished, the upgrade of the production site is the same commands as upgrading the non-production site. Just replace `erpnext-dev` with `frappe-bench` and you are all set. Don't forget to take a [full backup](backup.md "Backing Up ERPNext") just in case something goes wrong.
 
     sudo su - erpnext
     cd frappe-bench/

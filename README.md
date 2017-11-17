@@ -28,7 +28,7 @@ This is the ERPNext Administrator's Guide. All content in this guide is generate
         * 3.3.3 [Reverting to an older version](i-u-b/revert.md)
         * 3.3.4 [Upgrade Troubleshooting](i-u-b/upgrade-trouble.md)
     * 3.4 [Backing Up ERPNext](i-u-b/backup.md)
-    * 3.5 [Restoring from a Previous Backup](restore.md)
+    * 3.5 [Restoring from a Previous Backup](i-u-b/restore.md)
 * 4 Setup
     * 4.1 [The Setup Wizard](setup/setup.md)
     * 4.2 [Domans](setup/domains.md)

@@ -9,9 +9,9 @@ ERPNext should be [installed](install.md "Installing ERPNext") in a user directo
 Best practice is to logon to the server with a regular user that has `sudoer` rights. Don't logon as `root`. Use the `sudo` command to do any privileged work on the server. When working with `bench`, logon with the regular user and `su` to the `erpnext` user like this:
 
     sudo su - erpnext
-    cd frappe-bench
+    cd frappe-bench/
 
-Using the dash ` - ` in the command, tells `su` that you want a login shell. This simulates the administrator logging into the server as that user and loads a full environment for you.
+**NOTE**: Using the dash ` - ` in the command, tells `su` that you want a login shell. This simulates the administrator logging into the server as that user and loads a full environment for you.
 
 ### 3.1.1 Frappe Bench Operating Environment
 
