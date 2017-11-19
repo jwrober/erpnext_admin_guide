@@ -27,9 +27,9 @@ Once you have logged on to the server and become the `erpnext` user, you are rea
     * **pids** -- Process ID Files
 * **env** -- The `bench` operating environment
     * **bin** -- `python` executables and scripts
-    * **include** -- Links to python 2.7 includes
-    * **lib** -- Python 2.7 libraries
-    * **local** -- Python 2.7 local 
+    * **include** -- Links to python includes
+    * **lib** -- Python libraries
+    * **local** -- Python local 
     * **selenium** -- Web [browser automation](http://www.seleniumhq.org/ "Selenium Website") tool
     * **share** -- `man` pages
     * **src** -- Other utilities like `mysqlclient` and `pdfkit`.
@@ -48,6 +48,6 @@ Once you have logged on to the server and become the `erpnext` user, you are rea
 
 Administrators need to be comfortable with the frappe `bench` command structure. 
 
-There is a [cheat sheet](https://frappe.io/docs/user/en/bench/resources/bench-commands-cheatsheet "Frappe Bench Commands Cheetsheet") available at the link below that is a good start.<br /><br />
+There is a [cheat sheet](https://frappe.io/docs/user/en/bench/resources/bench-commands-cheatsheet "Frappe Bench Commands Cheetsheet") available that is a good start.<br /><br />
 
 Previous: [2.2 Getting Help](../introduction/help.md "Getting Help") | Next: [3.1.3 Wonderful World of git](git.md "The Wonderful World of git")

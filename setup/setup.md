@@ -2,7 +2,7 @@
 
 ## 4.1 The Setup Wizard
 
-The Setup Wizard handles all of the initial setup steps on a brand new install.  The current user's manual does a decent job explaining this at this time.
+The Setup Wizard handles all of the initial setup steps on a brand new install.  The current users manual does a decent job explaining this at this time.
 
 [https://erpnext.org/docs/user/manual/en/setting-up/setup-wizard](https://erpnext.org/docs/user/manual/en/setting-up/setup-wizard)<br /><br />
 
