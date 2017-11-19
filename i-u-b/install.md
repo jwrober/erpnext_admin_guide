@@ -38,7 +38,7 @@ For Red Hat based distributions (CentOS) start by installing a collection of sof
         lcms2-devel libXext libXrender libffi-devel libjpeg-devel libselinux-python  \
         libtiff-devel libwebp-devel libxml2 libxml2-devel libxslt libxslt-devel      \
         libzip-devel mariadb-devel mariadb-server nginx nodejs npm openssl-devel     \
-        postfix python-2.7.5 python-devel python-setuptools redhat-lsb-core redis    \
+        postfix python-2 python-devel python-setuptools redhat-lsb-core redis    \
         sudo supervisor tcl-devel tk-devel wget which xorg-x11-fonts-75dpi           \
         xorg-x11-fonts-Type1 zlib-devel
     sudo shutdown -r now
@@ -48,7 +48,7 @@ Now to create the `erpnext` user. Run these commands:
     sudo useradd -m erpnext
     sudo passwd erpnext
 
-The group `sudo` might not exist on every platform. For example if you run a server in the Google Compute Engine instance the group is `google-suoders` and many base Debian based distributions use the `sudoers` group. Before running the next command run
+The group `sudo` might not exist on every platform. For example, if you run a server in the Google Compute Engine instance the group is `google-suoders` and many base Debian based distributions use the `sudoers` group. Before running the next command run
 
     cat /etc/group
 
