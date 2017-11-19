@@ -2,6 +2,10 @@
 
 This is the ERPNext Administrator's Guide. All content in this guide is generated in markdown (MD) language. The purpose of this guide is to provide self-hosters of the [ERPNext](https://erpnext.org "ERPNext Website") system a place to capture tips and tricks on administering this complex platform.
 
+If you would like to contribute to the maintenance of this guide, please PM me from the [ERPNext Discussion Forum](https://discuss.erpnext.com/) to get added to the repo. I go by the handle `james_robertson` there. Also, please read the [Contributing Guidelines](https://github.com/jwrober/erpnext_admin_guide/wiki/Contributing-Guidelines) as well.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.
+
 ## Table of Contents
 
 * 1 Preface

@@ -1,8 +1,8 @@
 ## 3.3 Upgrading ERPNext
 
-In this section we go over steps to upgrade ERPNext. One of the things that comes up very often on the [Discussion Forum](https://discuss.erpnext.com/ "ERPNext Discussion Forum") is upgrade issues. So besides installation issues, the author would say that the second most often cries for help are from challenges related to upgrading ERPNext. What is interesting is in most cases the administrator is the one who caused their issue because they didn't take the time to be prepared and get setup in a way to allow them plenty of flexibilty to upgrade in a safe evironment.
+In this section we go over steps to upgrade ERPNext. One of the things that comes up very often on the [Discussion Forum](https://discuss.erpnext.com/ "ERPNext Discussion Forum") is upgrade issues. So besides installation issues, the author would say that the second most often cries for help are from challenges related to upgrading ERPNext. What is interesting is in most cases the administrator is the one who caused their own issue because they didn't take the time to be prepared and get setup in a way to allow them plenty of flexibilty to upgrade in a safe evironment.
 
-What is this "flexibility"?  It's very simple. **ONLY UPGRADE IN A DEVELOPMENT/NON-PRODUCTION ENVIRONMENT FIRST.**
+What is this "flexibility"?  It's very simple: **ONLY UPGRADE IN A DEVELOPMENT/NON-PRODUCTION ENVIRONMENT FIRST.**
 
 Yes, the author purposefully put that in all caps with bold text to make a point. Seriously, who upgrades a production environment and breaks it because he didn't take the time to test out an upgrade in a development environment first. Your company's ERPNext installation is at the heart of its operations! Don't risk messing something up because you (as the administrator) didn't take the time to test out in a safe place where you have all the time in the world to figure out and fix before you upgrade production. Please read [3.2.2 Installation of a Side by Side Development Environment](install-dev.md "Installation of a Side by Side Development Environment") to get setup.
 
@@ -25,8 +25,6 @@ Assuming the development environment is the same version as production (or very 
     bench clear-cahce
     bench clear-website-cache
     bench restart
-
-**NOTE**: The use of the elipsis ( `...` ) is used to shorten the command. Clearly you will need to give a complete path for `bench restore`.
 
 At this point, you should go into the development environment user interface and ensure it looks and operates like the current production site. Run trough a few tests to ensure everything is working ok. Don't just blindly assume that the copy down operation completed above actually worked!
 
@@ -87,6 +85,7 @@ The steps to upgrade from a minor version to another is very similar to the proc
 * Your production site will always be pretty close to the current code base.
 * Security issues discovered in the frappe framework are keeping your business safe.
 * Upgrades are less painful and require less troubleshooting as they often work much better than trying the major upgrade route.
+* The changes to the software are smaller and so any re-training of your users will be easier.
 
 To summarize the steps:
 
