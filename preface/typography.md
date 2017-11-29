@@ -40,4 +40,4 @@ When working inside of ERPNext, the Administrators guide will give a click path 
 
 In this example, the user clicks the Explore icon on the Desktop, navigates to the Setup module, looks for the Users header and clicks on the User document list.<br /><br />
 
-Previous: [1.3 Prerequisites](prerequisites.md "Prerequisites") | Next: [2.1 Overview of ERPNext](../introduction/overview.md "Introduction")
+Previous: [1.3 Prerequisites](prerequisites "Prerequisites") | Next: [2.1 Overview of ERPNext](../introduction/overview "Introduction")

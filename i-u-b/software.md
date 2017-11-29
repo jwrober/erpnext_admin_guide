@@ -1,6 +1,6 @@
 ### 3.1.5 Software Packages Installed
 
-During [Installation](install.md "Installing ERPNext") the `install.py` Python script will install a collection of sofware dependencies. 
+During [Installation](install "Installing ERPNext") the `install.py` Python script will install a collection of software dependencies. 
 
 Here is the alphabetical order listing for all installations (common):
 
@@ -66,7 +66,7 @@ Here is the alphabetical order listing for Red Hat based Linux distributions:
 * cronie
 * epel-release
 * freetype-devel
-* groupinstall
+* groupinstall 'Development Tools'
 * lcms2-devel 
 * libXext
 * libXrender
@@ -96,4 +96,4 @@ Here is the listing for MacOS:
 * brew
 * cmake<br /><br />
 
-Previous: [3.1.4 Wonderful World of nginx](nginx.md "The Wonderful World of nginx") | Next: [3.2 Installing ERPNext](install.md "Installing ERPNext")
+Previous: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx") | Next: [3.2 Installing ERPNext](install "Installing ERPNext")

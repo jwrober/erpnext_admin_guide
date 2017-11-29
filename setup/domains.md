@@ -1,5 +1,13 @@
 ## 4.2 Domains
 
-TO BE WRITTEN<br /><br />
 
-Previous: [4.1 Setup](setup.md "Setup Wizard") | Next: [5 Explore > Setup](../explore-setup/setup.md "Explore > Setup")
+As of version 9.2.x of ERPNext, these are the available domains:
+* Distribution
+* Manufacturing
+* Retail
+* Services
+* Education (beta)
+* Healthcare (beta)
+<br /><br />
+
+Previous: [4.1 Setup](setup "Setup Wizard") | Next: [5 Explore > Setup](../explore-setup/setup "Explore > Setup")

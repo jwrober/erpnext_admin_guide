@@ -2,40 +2,45 @@
 
 This is the ERPNext Administrator's Guide. All content in this guide is generated in markdown (MD) language. The purpose of this guide is to provide self-hosters of the [ERPNext](https://erpnext.org "ERPNext Website") system a place to capture tips and tricks on administering this complex platform.
 
-If you would like to contribute to the maintenance of this guide, please PM me from the [ERPNext Discussion Forum](https://discuss.erpnext.com/) to get added to the repo. I go by the handle `james_robertson` there. Also, please read the [Contributing Guidelines](https://github.com/jwrober/erpnext_admin_guide/wiki/Contributing-Guidelines) as well.
+If you would like to contribute to the maintenance of this guide, please PM me from the [ERPNext Discussion Forum](https://discuss.erpnext.com/) to get added to the repo. I go by the handle `james_robertson` there. Please read the [Contributing Guidelines](CONTRIBUTING).
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.
+![GPLv3 Logo](https://www.gnu.org/graphics/gplv3-127x51.png)<br />
+This work is licensed under the GNU GENERAL PUBLIC LICENSE v3. Same as [ERPNext](https://github.com/frappe/erpnext "ERPNext GitHub Repo").
+
+Read this guide online at <https://jwrober.github.io/erpnext_admin_guide/>
+
+The GitHub repository is at <https://github.com/jwrober/erpnext_admin_guide>
 
 ## Table of Contents
 
 * 1 Preface
-    * 1.1 [Foreward](preface/foreward.md "Foreward")
-    * 1.2 [Audience](preface/audience.md "Audience")
-    * 1.3 [Prerequisites](preface/prerequisites.md "Prereguisites")
-    * 1.4 [Typography](preface/typography.md "Typography")
+    * 1.1 [Foreward](preface/foreward "Foreward")
+    * 1.2 [Audience](preface/audience "Audience")
+    * 1.3 [Prerequisites](preface/prerequisites "Prereguisites")
+    * 1.4 [Typography](preface/typography "Typography")
 * 2 Introduction
-    * 2.1 [Overview of ERPNext](introduction/overview.md "Overview of ERPNext")
-    * 2.2 [Getting Help](introduction/help.md "Getting Help")
+    * 2.1 [Overview of ERPNext](introduction/overview "Overview of ERPNext")
+    * 2.2 [Getting Help](introduction/help "Getting Help")
 * 3 ERPNext Installation, Upgrades, and Backups
-    * 3.1 [Frappe Bench](i-u-b/bench.md)
-        * 3.1.1 [Operating Envrionment](i-u-b/bench.md)
-        * 3.1.2 [Frappe Bench Commands](i-u-b/bench.md)
-        * 3.1.3 [The Wonderful World of git](i-u-b/git.md)
-        * 3.1.4 [The Wonderful World of nginx](i-u-b/nginx.md)
-        * 3.1.5 [Software Packages Installed](i-u-b/software.md)
-    * 3.2 [Installing ERPNext](i-u-b/install.md)
-        * 3.2.1 [Installation Troubleshooting](i-u-b/install-trouble.md)
-        * 3.2.2 [Installation of a Side by Side Development Environment](i-u-b/install-dev.md)
-    * 3.3 [Upgrading ERPNext](i-u-b/upgrade.md)
-        * 3.3.1 [Upgrading from one Major Version to Another](i-u-b/upgrade.md)
-        * 3.3.2 [Upgrading from one Minor Version to Another](i-u-b/upgrade.md)
-        * 3.3.3 [Reverting to an older version](i-u-b/revert.md)
-        * 3.3.4 [Upgrade Troubleshooting](i-u-b/upgrade-trouble.md)
-    * 3.4 [Backing Up ERPNext](i-u-b/backup.md)
-    * 3.5 [Restoring from a Previous Backup](i-u-b/restore.md)
+    * 3.1 [Frappe Bench](i-u-b/bench)
+        * 3.1.1 [Operating Envrionment](i-u-b/bench)
+        * 3.1.2 [Frappe Bench Commands](i-u-b/bench)
+        * 3.1.3 [The Wonderful World of git](i-u-b/git)
+        * 3.1.4 [The Wonderful World of nginx](i-u-b/nginx)
+        * 3.1.5 [Software Packages Installed](i-u-b/software)
+    * 3.2 [Installing ERPNext](i-u-b/install)
+        * 3.2.1 [Installation Troubleshooting](i-u-b/install-trouble)
+        * 3.2.2 [Installation of a Side by Side Development Environment](i-u-b/install-dev)
+    * 3.3 [Upgrading ERPNext](i-u-b/upgrade)
+        * 3.3.1 [Upgrading from one Major Version to Another](i-u-b/upgrade)
+        * 3.3.2 [Upgrading from one Minor Version to Another](i-u-b/upgrade)
+        * 3.3.3 [Reverting to an older version](i-u-b/revert)
+        * 3.3.4 [Upgrade Troubleshooting](i-u-b/upgrade-trouble)
+    * 3.4 [Backing Up ERPNext](i-u-b/backup)
+    * 3.5 [Restoring from a Previous Backup](i-u-b/restore)
 * 4 Setup
-    * 4.1 [The Setup Wizard](setup/setup.md)
-    * 4.2 [Domans](setup/domains.md)
+    * 4.1 [The Setup Wizard](setup/setup)
+    * 4.2 [Domans](setup/domains)
 * 5 Explore > Setup > Users
     * 5.1 User
     * 5.2 Role
@@ -217,4 +222,4 @@ Now that you have read to the bottom of the current table of contents, you will 
 
 We will work on those at a future date! As you can see, there is a lot to fill in yet.<br /><br />
 
-Next: [1.1 Foreward](preface/foreward.md "Foreward")
+Next: [1.1 Foreward](preface/foreward "Foreward")
