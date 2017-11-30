@@ -1,3 +1,5 @@
+Home: [Table of Contents](../README.md "Table of Contents") | Previous: [2.2 Getting Help](../introduction/help "Getting Help") | Next: [3.1.3 Wonderful World of git](git "The Wonderful World of git") 
+
 # 3.0 ERPNext Installation, Upgrades and Backups
 
 ## 3.1 Frappe Bench
@@ -13,6 +15,7 @@ Best practice is to logon to the server with a regular user that has `sudoer` ri
 
 **NOTE**: Using the dash ` - ` in the command, tells `su` that you want a login shell. This simulates the administrator logging into the server as that user and loads a full environment for you.
 
+<a name="OpEnv">&nbsp;</a>
 ### 3.1.1 Frappe Bench Operating Environment
 
 Once you have logged on to the server and become the `erpnext` user, you are ready to get to work with `bench`. During [installation](install "Installing ERPNext"), bench will create the following directory structure:
@@ -44,10 +47,11 @@ Once you have logged on to the server and become the `erpnext` user, you are rea
         * **public** -- Public file attachments to various documents inside the user interface are stored on the filesystem here.
         * **task-logs**
 
+<a name="Cmd">&nbsp;</a>
 ### 3.1.2 Frappe Bench Commands
 
 Administrators need to be comfortable with the frappe `bench` command structure. 
 
 There is a [cheat sheet](https://frappe.io/docs/user/en/bench/resources/bench-commands-cheatsheet "Frappe Bench Commands Cheetsheet") available that is a good start.<br /><br />
 
-Previous: [2.2 Getting Help](../introduction/help "Getting Help") | Next: [3.1.3 Wonderful World of git](git "The Wonderful World of git")
+Home: [Table of Contents](../README.md "Table of Contents") | Previous: [2.2 Getting Help](../introduction/help "Getting Help") | Next: [3.1.3 Wonderful World of git](git "The Wonderful World of git")

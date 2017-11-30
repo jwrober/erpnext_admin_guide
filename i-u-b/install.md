@@ -1,3 +1,5 @@
+Home: [Table of Contents](../README.md "Table of Contents") | Previous: Next: [3.1.5 Software Packages Installed](software "Software Packages Installed") | Next: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting")
+
 ## 3.2 Installing ERPNext
 
 One of the most common cries for help on the [ERPNext Discussion Forum](https://discuss.erpnext.com/ "ERPNext Discussion Forum") is for installation issues. Getting ERPNext installed can be a bit of a hassle, especially for new Linux administrators. The developers of ERPNext have created an install script (`install.py`) of sorts, but it can back-fire on a new administrator.
@@ -208,4 +210,4 @@ If any of the above items are not running, then you will need to troubleshoot th
 su
 At this point the `erpnext` user should be an non-sudoer user and you will have an empty production environment running. Next step is to run the [Setup Wizard](../setup/setup "Setup").<br /><br />
 
-Previous: Next: [3.1.5 Software Packages Installed](software "Software Packages Installed") | Next: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting")
+Home: [Table of Contents](../README.md "Table of Contents") | Previous: Next: [3.1.5 Software Packages Installed](software "Software Packages Installed") | Next: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting")

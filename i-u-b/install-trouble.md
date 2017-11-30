@@ -1,3 +1,5 @@
+Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
+
 ### 3.2.1 Installation Troubleshooting
 
 There are a number of things that can go wrong with an installation.
@@ -19,9 +21,9 @@ This installation error is caused if you have an out of date `pyOpenSSL` module 
 
 and then re-run `install.py` again with the same command line arguments.
 
-#### 3.2.1.3 Nginx not listenting on port 80 after installation
+#### 3.2.1.3 Nginx not listening on port 80 after installation
 
-Go to the [bench name] folder that was used during install and run `bench start` and see what errors crop up. Correct them and then restart the server. Run `bench start` again to see if any other errors come up. If not then run `bench update` to finialize settings. Another tip is to become the `root` user and take a look at the `/var/log/nginx/error.log` file and see what is in there.
+Go to the [bench name] folder that was used during install and run `bench start` and see what errors crop up. Correct them and then restart the server. Run `bench start` again to see if any other errors come up. If not then run `bench update` to finalize settings. Another tip is to become the `root` user and take a look at the `/var/log/nginx/error.log` file and see what is in there.
 
 Confirm by running
 
@@ -29,4 +31,4 @@ Confirm by running
 
 and see if the server is running.<br /><br />
 
-Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
+Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
