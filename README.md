@@ -11,6 +11,8 @@ Read this guide online at <https://jwrober.github.io/erpnext_admin_guide/>
 
 The GitHub repository is at <https://github.com/jwrober/erpnext_admin_guide>
 
+Next: [1.1 Foreward](preface/foreward "Foreward")
+
 ## Table of Contents
 
 * 1 Preface
@@ -23,8 +25,8 @@ The GitHub repository is at <https://github.com/jwrober/erpnext_admin_guide>
     * 2.2 [Getting Help](introduction/help "Getting Help")
 * 3 ERPNext Installation, Upgrades, and Backups
     * 3.1 [Frappe Bench](i-u-b/bench)
-        * 3.1.1 [Operating Envrionment](i-u-b/bench)
-        * 3.1.2 [Frappe Bench Commands](i-u-b/bench)
+        * 3.1.1 [Operating Envrionment](i-u-b/bench#OpEnv)
+        * 3.1.2 [Frappe Bench Commands](i-u-b/bench#Cmd)
         * 3.1.3 [The Wonderful World of git](i-u-b/git)
         * 3.1.4 [The Wonderful World of nginx](i-u-b/nginx)
         * 3.1.5 [Software Packages Installed](i-u-b/software)
@@ -32,8 +34,8 @@ The GitHub repository is at <https://github.com/jwrober/erpnext_admin_guide>
         * 3.2.1 [Installation Troubleshooting](i-u-b/install-trouble)
         * 3.2.2 [Installation of a Side by Side Development Environment](i-u-b/install-dev)
     * 3.3 [Upgrading ERPNext](i-u-b/upgrade)
-        * 3.3.1 [Upgrading from one Major Version to Another](i-u-b/upgrade)
-        * 3.3.2 [Upgrading from one Minor Version to Another](i-u-b/upgrade)
+        * 3.3.1 [Upgrading from one Major Version to Another](i-u-b/upgrade#Major)
+        * 3.3.2 [Upgrading from one Minor Version to Another](i-u-b/upgrade#Minor)
         * 3.3.3 [Reverting to an older version](i-u-b/revert)
         * 3.3.4 [Upgrade Troubleshooting](i-u-b/upgrade-trouble)
     * 3.4 [Backing Up ERPNext](i-u-b/backup)
