@@ -67,7 +67,7 @@ For Debian based distributions (Debian, Ubuntu) start by installing a collection
 
     # You will be prompted to configure postfix for smarthost
     # Use sudo ... for Ubuntu
-    apt-get install -y sudo curl wget nginx postfix python2.7 vim
+    apt-get install -y sudo curl wget net-tools nginx postfix python2.7 vim
 
     usermod -aG [sudo group name] [your user id] # Debian Only
     exit                                         # Debian Only
