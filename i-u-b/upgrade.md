@@ -10,7 +10,7 @@ Yes, the admin guide purposefully put that in all caps with bold text to make a 
 
 The developers of ERPNext use a three-numeral version system in this format `[major version].[minor version].[patch level]`. So an upgrade of one major version to another would be like going from v7.x to v8.x or a really big jump would be going from v7.x to v9.x.  There are a ton of things that can happen when doing a major upgrade! This is where doing work in a [non-production environment](install-dev "Installation of a Side by Side Development Environment") is really needed. The admin guide has NEVER seen anyone complete a major upgrade without issue. There are too many factors to consider.
 
-First start with a [good full backup](backup "Backing up ERPNext") of the development system and a simple backup of the production system.
+First start with a [good full backup](backup "Backing up ERPNext") of the development system and a [simple backup](backup "Backing up ERPNext") of the production system.
     
 Assuming the stage environment is the same version as production (or very close), restore the production database to the stage environment. Before you run the commands below, ensure that the `encryption_key` value in  `sites/[site name]/site_config.json` from the production site is also in the stage `site_config.json`. Otherwise you will get an error on restart.
 
@@ -73,15 +73,15 @@ The steps to upgrade from a minor version to another is very similar to the proc
 
 To summarize the steps:
 
-1. Take a [simple backup](backup) of the production database and a full backup of the stage environment.
-1. Restore the production database to the stage environment.
+1. Take a [simple backup](backup "Backing up ERPNext") of the production database and a [full backup](backup "Backing up ERPNext") of the stage environment.
+1. [Restore](restore "Restoring from an ERPNext Backup") the production database to the stage environment.
 1. Run `bench migrate`, `bench clear-cache`, `bench clear-website-cache`, and `bench restart` to get stage ready
 1. Confirm that stage is operating like production.
-1. Run `bench update` to update the stage environment to latest code.
+1. Run `bench update` and then `bench restart` to update the stage environment to latest code.
 1. Test, Test and Test some more. Leverage your power users.
-1. Take a simple and full backup of the production database and environment
+1. Take a [simple and a full backup](backup "Backing up ERPNext") of the production database and environment.
 1. Run `bench update` to update the production system to latest code.
-1. Run `bench migrate`, `bench clear-cache`, `bench clear-website-cache`, and `bench restart` to get production ready
+1. Run `bench clear-cache`, `bench clear-website-cache`, and `bench restart` to get production ready
 1. Get some coffee!<br /><br />
 
 Previous: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") | Next: [3.3.3 Reverting to an Older Version](revert "Reverting to an Older Version")
