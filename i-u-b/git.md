@@ -1,3 +1,5 @@
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3 Frappe Bench](bench "Frappe Bench") | Next: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx") 
+
 ### 3.1.3 The Wonderful World of git
 
 `git` is a software code revision/version control system. The popular GitHub website hosts `git` repositories online for projects such as ERPNext and this administrators guide to reside in. Administrators for companies that want to host their own repositories can do so, especially those that do not want their code public.
@@ -10,4 +12,4 @@ Here are some places to go gain some knowledge on `git`:
 * There is a good cheat sheet at [git-tower](https://www.git-tower.com/blog/git-cheat-sheet "Git Cheat Sheet")<br /><br />
 * There is the official documentation at [git-scm](https://git-scm.com/docs "Git SCM Documentation")<br /><br />
 
-Previous: [3 Frappe Bench](bench "Frappe Bench") | Next: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3 Frappe Bench](bench "Frappe Bench") | Next: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx")

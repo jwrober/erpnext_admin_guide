@@ -1,3 +1,5 @@
+Home: [Table of Contents](../README "Table of Contents") | Previous: [1.2 Audience](audience "Audience") | Next: [1.4 Typography](typography "Typography")
+
 ## 1.3 Prerequisites
 
 To be proficient in the tasks that this book describes, the reader needs to have a good understanding of the following:
@@ -11,4 +13,4 @@ To be proficient in the tasks that this book describes, the reader needs to have
 * `nginx` administration
     * This book gives some aid and recipes for tasks, but understanding the underlying architecture of the web server will come in handy.<br /><br />
     
-Previous: [1.2 Audience](audience "Audience") | Next: [1.4 Typography](typography "Typography")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [1.2 Audience](audience "Audience") | Next: [1.4 Typography](typography "Typography")

@@ -1,3 +1,5 @@
+Home: [Table of Contents](../README "Table of Contents") | Previous: [1.4 Typography](../preface/typography "Typography") | Next: [2.2 Getting Help](help "Getting Help") 
+
 # 2.0 Introduction
 
 ## 2.1 Overview of ERPNext
@@ -12,4 +14,4 @@ From the ERPNext Documentation website at [https://erpnext.org/docs](https://erp
 
 > ERPNext is Open Source under the GNU General Public License v3 and has been listed as one of the Best Open Source Softwares in the world by many online blogs.<br /><br />
 
-Previous: [1.4 Typography](../preface/typography "Typography") | Next: [2.2 Getting Help](help "Getting Help")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [1.4 Typography](../preface/typography "Typography") | Next: [2.2 Getting Help](help "Getting Help")

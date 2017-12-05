@@ -1,6 +1,8 @@
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.4 Backing Up ERPNext](backup "Backing Up ERPNext") | Next: [4 Setup](../setup/setup "Setup")
+
 ## 3.5 Restoring from a Previous Backup
 
-Assuming you have a good [simple backup](backup "Backing Up ERPNext"), you can use these commands to restore the database and files. These commands also assume that you are not [reverting](revert "Reverting to an Older Version") back to a different code base.
+Assuming you have a good [simple backup](backup#Simple "Backing Up ERPNext"), you can use these commands to restore the database and files. These commands also assume that you are not [reverting](revert "Reverting to an Older Version") back to a different code base.
 
     sudo su - erpnext
     cd frappe-bench/
@@ -11,4 +13,4 @@ Assuming you have a good [simple backup](backup "Backing Up ERPNext"), you can u
 
 This should bring your system's database and files configuration back to the point in time the backup was taken.<br /><br />
 
-Previous: [3.4 Backing Up ERPNext](backup "Backing Up ERPNext") | Next: [4 Setup](../setup/setup "Setup")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.4 Backing Up ERPNext](backup "Backing Up ERPNext") | Next: [4 Setup](../setup/setup "Setup")

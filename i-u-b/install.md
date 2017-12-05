@@ -1,7 +1,10 @@
+Home: [Table of Contents](../README "Table of Contents") | Previous: Next: [3.1.5 Software Packages Installed](software "Software Packages Installed") | Next: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting")
+
 ## 3.2 Installing ERPNext
 
 One of the most common cries for help on the [ERPNext Discussion Forum](https://discuss.erpnext.com/ "ERPNext Discussion Forum") is for installation issues. Getting ERPNext installed can be a bit of a hassle, especially for new Linux administrators. The developers of ERPNext have created an install script (`install.py`) of sorts, but it can back-fire on a new administrator.
 
+<a name="Env">&nbsp;</a>
 ### Operating Environments
 
 Before we get into installation, let us take few minutes and discuss a term: *operating environment*. There are a number of ways various people and organizations use this term with regards to how a system like ERPNext is installed and managed. This is the guide's view here:
@@ -81,22 +84,17 @@ For Red Hat based distributions (CentOS) start by installing a collection of sof
     sudo yum install -y epel-release redhat-lsb-core
     sudo yum install -y curl wget nginx net-tools python27 vim
 
-    # Set number of file descriptors
-    sudo su -
-    
-    cat > /etc/security/limits.d/21-erpnext.conf << "EOF"
+    # Add a limits file for ERPNext
+    #   Copy & Paste from sudo ... to EOF" into putty window
+    sudo bash -c "cat <<EOF > /etc/security/limits.d/21-erpnext.conf
     # Limits file for ERPNext
     *     soft   nofile  1048576
     *     hard   nofile  1048576
     
-    EOF
-    
-    # Exit out of root user shell
-    exit
-    
+    EOF"
+
     # Restart the server
     sudo shutdown -r now
-    
 
 The install script installs NodeJS 6.x.  We want the latest stable. For all operating systems, install `NodeJS` from their respective repositories:
 
@@ -142,7 +140,7 @@ Download and run the install script.
     # Install the software
     # You will be prompted for what you want the mysql root and erpnext admin passwords to be
     sudo python install.py --production --site [site name].[domain] --user erpnext \
-        --bench-name erpnext-prd --verbose 2>&1 | tee erpnext-install.log
+        --bench-name erpnext-prd --verbose 2>&1 | tee --append erpnext-install.log
 
 **NOTE:**  If you want a stage environment keep the `--production` flag, but change the `bench-name` to `erpnext-stg`. If you want a development environment keep the `--production` flag, but change the `bench-name` to `erpnext-dev`. There are further steps later if you want to enable developer mode. See [3.2.2 Installation of a Side by Side Development Environment](install-dev) for notes on a side-by-side installation.
 
@@ -208,4 +206,4 @@ If any of the above items are not running, then you will need to troubleshoot th
 su
 At this point the `erpnext` user should be an non-sudoer user and you will have an empty production environment running. Next step is to run the [Setup Wizard](../setup/setup "Setup").<br /><br />
 
-Previous: Next: [3.1.5 Software Packages Installed](software "Software Packages Installed") | Next: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting")
+Home: [Table of Contents](../README "Table of Contents") | Previous: Next: [3.1.5 Software Packages Installed](software "Software Packages Installed") | Next: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting")

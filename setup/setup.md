@@ -1,3 +1,5 @@
+Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.5 Restoring from a Previous Backup](../i-u-b/restore "Restoring from a Previous Backup") | Next: [4.2 Domains](domains "Domains")
+
 # 4.0 Setup
 
 ## 4.1 The Setup Wizard
@@ -14,4 +16,4 @@ The current users manual does a good job explaining the Setup Wizard. The Setup 
 
 When the Setup Wizard as completed, you will be redirected to the ERPNext Desk (Desktop) as the user that you created during the wizard. You will then be prompted to answer another set of questions to complete the initial setup of your environment.<br /><br />
 
-Previous: [3.5 Restoring from a Previous Backup](../i-u-b/restore "Restoring from a Previous Backup") | Next: [4.2 Domains](domains "Domains")
+Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.5 Restoring from a Previous Backup](../i-u-b/restore "Restoring from a Previous Backup") | Next: [4.2 Domains](domains "Domains")
