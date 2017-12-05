@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") | Next: [3.3.3 Reverting to an Older Version](revert "Reverting to an Older Version")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") | Next: [3.3.3 Reverting to an Older Version](revert "Reverting to an Older Version")
 
 ## 3.3 Upgrading ERPNext
 
@@ -88,4 +88,4 @@ To summarize the steps:
 1. Run `bench clear-cache`, `bench clear-website-cache`, and `bench restart` to get production ready
 1. Get some coffee!<br /><br />
 
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") | Next: [3.3.3 Reverting to an Older Version](revert "Reverting to an Older Version")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") | Next: [3.3.3 Reverting to an Older Version](revert "Reverting to an Older Version")

@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting") | Next: [3.5 Restoring from a Previous Backup](restore "Restoring from a Previous Backup") 
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting") | Next: [3.5 Restoring from a Previous Backup](restore "Restoring from a Previous Backup") 
 
 ## 3.4 Backing Up ERPNext
 
@@ -31,4 +31,4 @@ There is another level of backup that is not really discussed in the [Discussion
 
 This will create a `tar.bz2` file in the `/home/erpnext/` directory. You can then follow the steps in [3.3.3 Reverting to an Older Version](revert "Reverting to an Older Version") to get back to a known good state.<br /><br />
 
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting") | Next: [3.5 Restoring from a Previous Backup](restore "Restoring from a Previous Backup")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting") | Next: [3.5 Restoring from a Previous Backup](restore "Restoring from a Previous Backup")
