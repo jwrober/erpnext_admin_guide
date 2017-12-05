@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
 
 ### 3.2.1 Installation Troubleshooting
 
@@ -31,4 +31,4 @@ Confirm by running
 
 and see if the server is running.<br /><br />
 
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 

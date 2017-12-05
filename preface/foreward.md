@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [Readme / Index](../README "Readme / Index") | Next: [1.2 Audience](audience "Audience") 
+Home: [Table of Contents](../README "Table of Contents") | Previous: [Readme / Index](../README "Readme / Index") | Next: [1.2 Audience](audience "Audience") 
 
 # 1.0 Preface
 
@@ -8,4 +8,4 @@ This book was originally created in October 2016 as I began to install and manag
 
 <div style="text-align: right">James Robertson<br />November 2017</div><br /><br />
   
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [Readme / Index](../README "Readme / Index") | Next: [1.2 Audience](audience "Audience")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [Readme / Index](../README "Readme / Index") | Next: [1.2 Audience](audience "Audience")

@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README.md "Table of Contents") | Previous [3.2 Upgrading ERPNext](upgrade "Upgrading ERPNext") | Next: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting")
+Home: [Table of Contents](../README "Table of Contents") | Previous [3.2 Upgrading ERPNext](upgrade "Upgrading ERPNext") | Next: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting")
 
 ### 3.3.3 Reverting to an Older Version
 
@@ -22,4 +22,4 @@ Assuming the steps to take a **full backup** were completed from [3.4 Backing up
 
 Following these commands will essentially wipe the old version completely and restore what was taken in the full backup to production.<br /><br />
 
-Home: [Table of Contents](../README.md "Table of Contents") | Previous [3.2 Upgrading ERPNext](upgrade "Upgrading ERPNext") | Next: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting")
+Home: [Table of Contents](../README "Table of Contents") | Previous [3.2 Upgrading ERPNext](upgrade "Upgrading ERPNext") | Next: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting")

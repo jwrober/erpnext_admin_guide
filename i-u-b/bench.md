@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [2.2 Getting Help](../introduction/help "Getting Help") | Next: [3.1.3 Wonderful World of git](git "The Wonderful World of git") 
+Home: [Table of Contents](../README "Table of Contents") | Previous: [2.2 Getting Help](../introduction/help "Getting Help") | Next: [3.1.3 Wonderful World of git](git "The Wonderful World of git") 
 
 # 3.0 ERPNext Installation, Upgrades and Backups
 
@@ -54,4 +54,4 @@ Administrators need to be comfortable with the frappe `bench` command structure.
 
 There is a [cheat sheet](https://frappe.io/docs/user/en/bench/resources/bench-commands-cheatsheet "Frappe Bench Commands Cheetsheet") available that is a good start.<br /><br />
 
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [2.2 Getting Help](../introduction/help "Getting Help") | Next: [3.1.3 Wonderful World of git](git "The Wonderful World of git")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [2.2 Getting Help](../introduction/help "Getting Help") | Next: [3.1.3 Wonderful World of git](git "The Wonderful World of git")

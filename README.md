@@ -206,6 +206,12 @@ Next: [1.1 Foreward](preface/foreward "Foreward")
         * 20.4.1 GSuite Settings
         * 20.4.2 GSuite Templates
         * 20.4.3 Webhook
+* 21 Reporting
+    * [21.1 Introduction](reporting/introduction "Reporting Introduction")
+    * [21.2 Types of Reporting](reporting/types "Types of Reporting")
+        * [21.2.1 Internal Report Builder Reports](reporting/types#rb "Internal Report Builder Reports")
+    * [21.3 Installation of External BI Engine](reporting/install-bi "Installation of External Reporting Engine")
+    * [21.4 Installation of BI Development Environment](reporting/install-bi-dev "Installation of BI Dev Environment")
 
 Now that you have read to the bottom of the current table of contents, you will notice that there are no entries for the following modules:
 

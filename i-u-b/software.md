@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx") | Next: [3.2 Installing ERPNext](install "Installing ERPNext")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx") | Next: [3.2 Installing ERPNext](install "Installing ERPNext")
 
 ### 3.1.5 Software Packages Installed
 
@@ -98,4 +98,4 @@ Here is the listing for MacOS:
 * brew
 * cmake<br /><br />
 
-Home: [Table of Contents](../README.md "Table of Contents") | Previous: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx") | Next: [3.2 Installing ERPNext](install "Installing ERPNext")
+Home: [Table of Contents](../README "Table of Contents") | Previous: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx") | Next: [3.2 Installing ERPNext](install "Installing ERPNext")
