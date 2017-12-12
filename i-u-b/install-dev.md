@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README "Table of Contents") | Previous: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting") | Next: [3.3 Upgrading ERPNext](upgrade "Upgrading ERPNext") 
+Home: [Table of Contents](../ "Table of Contents") | Previous: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting") | Next: [3.3 Upgrading ERPNext](upgrade "Upgrading ERPNext") 
 
 ### 3.2.2 Installation of a Side by Side Development Environment
 
@@ -42,4 +42,4 @@ Now remove `sudoer` rights from the `erpnext` user to move back to a run-time co
 
 Most administrators will now take a [simple backup](backup#Simple "Backing up ERPNext") of the production site and then [restore](restore "Restoring from a Previous Backup") to the stage site. You will have a carbon copy of your production database in a stage environment that you can use for testing.<br /><br />
 
-Home: [Table of Contents](../README "Table of Contents") | Previous: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting") | Next: [3.3 Upgrading ERPNext](upgrade "Upgrading ERPNext")
+Home: [Table of Contents](../ "Table of Contents") | Previous: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting") | Next: [3.3 Upgrading ERPNext](upgrade "Upgrading ERPNext")
