@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README "Table of Contents") | Previous: [21.1 Introduction](introduction "Reporting Introduction") | Next: [21.3 Installation of External BI Engine](install-bi "Installation of External BI Engine")
+Home: [Table of Contents](../ "Table of Contents") | Previous: [21.1 Introduction](introduction "Reporting Introduction") | Next: [21.3 Installation of External BI Engine](install-bi "Installation of External BI Engine")
 
 ## 21.2 Type of Reporting in ERPNext
 
@@ -47,4 +47,4 @@ If the report has number in it, such as an accounting report, then adding a tota
 
 When finished, click **Save** to save the report.<br /><br />
 
-Home: [Table of Contents](../README "Table of Contents") | Previous: [21.1 Introduction](introduction "Reporting Introduction") | Next: [21.3 Installation of External BI Engine](install-bi "Installation of External BI Engine")
+Home: [Table of Contents](../ "Table of Contents") | Previous: [21.1 Introduction](introduction "Reporting Introduction") | Next: [21.3 Installation of External BI Engine](install-bi "Installation of External BI Engine")

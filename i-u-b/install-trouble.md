@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
+Home: [Table of Contents](../ "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
 
 ### 3.2.1 Installation Troubleshooting
 
@@ -29,6 +29,12 @@ Confirm by running
 
     sudo netstat -tulpn | grep nginx
 
-and see if the server is running.<br /><br />
+and see if the server is running.
 
-Home: [Table of Contents](../README "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
+This also happens if the `bench` was not setup for production mode.  The `erpnext` will need to be in the `sudo` group first. If it is, then run this command to setup the `bench` for production mode:
+
+    sudo bench setup production --yes erpnext
+
+You should see `nginx` running after this command is run.<br /><br />
+
+Home: [Table of Contents](../ "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
