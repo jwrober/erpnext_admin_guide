@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README "Table of Contents") | Previous: [21.2 Types of Reporting](types "Types of Reporting") | Next: [21.4 Installation of BI Development Environment](install-bi-dev "Installation of BI Development Environment")
+Home: [Table of Contents](../ "Table of Contents") | Previous: [21.2 Types of Reporting](types "Types of Reporting") | Next: [21.4 Installation of BI Development Environment](install-bi-dev "Installation of BI Development Environment")
 
 ## 21.3 Installation of a Business Intelligence Engine
 
@@ -9,6 +9,8 @@ The admin guide recommends JasperSoft JasperReports Server for an external BI En
 ### 21.3.1 Installation of JasperSoft JasperReports Server
 
 JasperSoft has some great documentation here - <https://community.jaspersoft.com/wiki/getting-started-jasperreports-server> - that you should definitely read over. Scroll down to the installation section of the page and download the installation guide. The community edition is what you will want to install for a base setup.
+
+**NOTE:** You don't have to install the JasperSoft JasperReports Server to run JasperReports in ERPNext. The custom application installed in the next step has a default option of hosting the reports locally. If you are just starting out, it is probably easiest to just install the app into ERPNext and host the reports locally.
 
 ### 21.3.2 Installation of Jasper Reports Custom ERPNext App
 
@@ -55,6 +57,9 @@ Now install the application
     bench get-app jasper_erpnext_report https://github.com/consoleerp/jasper_erpnext_report.git \
         2>&1 | tee jasper-reports-install.log
     bench install-app jasper_erpnext_report 2>&1 | tee --append jasper-reports-install.log
+    
+    # This step will upgrade your environment to latest code along with installing the 
+    #   python requirements for jasper_erpnext_report.
     bench update --requirements 2>&1 | tee --append jasper-reports-install.log
 
 #### 21.3.2.1 Setup Role Permissions Manager Permissions
@@ -85,6 +90,29 @@ From the User menu, select **Reload** to clear the cache.  Then open Jasper Erpn
 
 > Explore > Jasper Erpnext Report 
 
+#### 21.3.2.2 Setup MariaDB for Reporting
+
+If you need to be able to communicate to the server from a remote host, then follow these directions -- <https://mariadb.com/kb/en/library/configuring-mariadb-for-remote-client-access/>. This is usually needed as most administrators will want to use external database management tools and query "builder" tools to help develop the queries used for reporting.
+
+Some suggested management and "query" tools:
+* phpMyAdmin -- <https://www.phpmyadmin.net/>
+* Eclipse Data Tools Platform (DTP) -- <http://www.eclipse.org/datatools/>
+* SQuirreL SQL Client -- <http://www.squirrelsql.org/>
+
+It is a best practice to run reports with a "reporting user". You can read this documentation -- <https://mariadb.com/kb/en/library/create-user/>. Create a reporting user in the MariaDB instance for your envrionment.
+
+    # Logon to MariaDB
+    mysql -u root -p
+    
+    # Create the user
+    CREATE USER 'erpnext-reports'@'%' IDENTIFIED BY '[password]';
+    GRANT SELECT ON *.* to 'erpnext-reports'@'%';
+    FLUSH PRIVILEGES;
+    exit;
+    
+    # Now test the new user
+    mysql -u erpnext-reports -p
+
 <br />
 
-Home: [Table of Contents](../README "Table of Contents") | Previous: [21.2 Types of Reporting](types "Types of Reporting") | Next: [21.4 Installation of BI Development Environment](install-bi-dev "Installation of BI Development Environment")
+Home: [Table of Contents](../ "Table of Contents") | Previous: [21.2 Types of Reporting](types "Types of Reporting") | Next: [21.4 Installation of BI Development Environment](install-bi-dev "Installation of BI Development Environment")

@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README "Table of Contents") | Previous: [21.3 Installation of a Business Intelligence Engine](install-bi "Installation of a Business Intelligence Engine") | Next:
+Home: [Table of Contents](../ "Table of Contents") | Previous: [21.3 Installation of a Business Intelligence Engine](install-bi "Installation of a Business Intelligence Engine") | Next:
 
 ### 21.4 Installation of BI Development Environment
 
@@ -26,15 +26,25 @@ From the Welcome page, click to **Launch the Eclipse Marketplace**. Find and ins
 * GitHub Extensions
 * Markdown Text Editor
 * PyDev - Python IDE for Eclipse
+* Data Tools Platform
 
-After a restart of Eclipse, open the report design perspective.
+After a restart of Eclipse, you will need to get the MariaDB Java `jar` files for the database client. Go to this website -- <https://downloads.mariadb.org/connector-java/> and download the latest stable files. Drop them to a known good location such as the root directory of your installation.
+
+Open the driver configuration
+
+> Window > Preferences > Data Management > Connectivity > Driver Definition
+
+Click Add, Pick *MySQL JDBC Driver* (any version). Click on the Jar List tab. Add the `mariadb-java-client-[x].[y].[z].jar` and `mariadb-java-client-[x].[y].[z]-javadoc.jar` files to the list. Remove any out of the box `mysql.jar` references. Click on the Properties tab. Change Connection URL to `jdbc:mysql://[server]:3306/[database]`, change Database Name to `[database]`, change Driver Class to `org.mariadb.jdbc.Driver`, and change User ID to `[user]. Click OK to Save.
+
+Now you are ready to create a connection to the server for reporting.
+
+Open the report design perspective.
 
 > Window > Perspective > Open Perspective > Other
 
 Select "Report Design" from the list of perspectives.
 
-Now you are ready to build some reports! Read the [documentation](https://community.jaspersoft.com/project/jaspersoft-studio/resources) online.
+Now you are ready to build some reports! Read the [documentation](https://community.jaspersoft.com/project/jaspersoft-studio/resources) online.<br /><br />
 
-
-Home: [Table of Contents](../README "Table of Contents") | Previous: [21.3 Installation of a Business Intelligence Engine](install-bi "Installation of a Business Intelligence Engine") | Next: 
+Home: [Table of Contents](../ "Table of Contents") | Previous: [21.3 Installation of a Business Intelligence Engine](install-bi "Installation of a Business Intelligence Engine") | Next: 
  
