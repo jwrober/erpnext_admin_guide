@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README "Table of Contents") | Previous: [21.2 Types of Reporting](types "Types of Reporting") | Next: [21.4 Installation of BI Development Environment](install-bi-dev "Installation of BI Development Environment")
+Home: [Table of Contents](../ "Table of Contents") | Previous: [21.2 Types of Reporting](types "Types of Reporting") | Next: [21.4 Installation of BI Development Environment](install-bi-dev "Installation of BI Development Environment")
 
 ## 21.3 Installation of a Business Intelligence Engine
 
@@ -115,4 +115,4 @@ It is a best practice to run reports with a "reporting user". You can read this 
 
 <br />
 
-Home: [Table of Contents](../README "Table of Contents") | Previous: [21.2 Types of Reporting](types "Types of Reporting") | Next: [21.4 Installation of BI Development Environment](install-bi-dev "Installation of BI Development Environment")
+Home: [Table of Contents](../ "Table of Contents") | Previous: [21.2 Types of Reporting](types "Types of Reporting") | Next: [21.4 Installation of BI Development Environment](install-bi-dev "Installation of BI Development Environment")

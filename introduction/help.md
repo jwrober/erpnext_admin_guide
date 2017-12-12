@@ -1,4 +1,4 @@
-Home: [Table of Contents](../README "Table of Contents") | Previous: [2.1 Overview](overview "Overview of ERPNext") | Next [3.1 Frappe Bench](../i-u-b/bench "Frappe Bench")
+Home: [Table of Contents](../ "Table of Contents") | Previous: [2.1 Overview](overview "Overview of ERPNext") | Next [3.1 Frappe Bench](../i-u-b/bench "Frappe Bench")
 
 ## 2.2 Getting Help
 
@@ -16,4 +16,4 @@ There are a number of places to get help with your ERPNext installation.
 
 * There are a number of helpful videos that the ERPNext team has created at [https://erpnext.org/docs/user/videos/learn/](https://erpnext.org/docs/user/videos/learn/ "ERPNext Video Tutorials").<br /><br />
 
-Home: [Table of Contents](../README "Table of Contents") | Previous: [2.1 Overview](overview "Overview of ERPNext") | Next [3.1 Frappe Bench](../i-u-b/bench "Frappe Bench")
+Home: [Table of Contents](../ "Table of Contents") | Previous: [2.1 Overview](overview "Overview of ERPNext") | Next [3.1 Frappe Bench](../i-u-b/bench "Frappe Bench")
