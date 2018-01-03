@@ -19,9 +19,10 @@ Now become the `erpnext` user to setup a new bench.
     sudo su - erpnext
 
     # You should be in the root directory of the erpnext user
+    bench switch-to-master
     bench init erpnext-stg --verbose 2>&1 | tee erpnext-stg-install.log
     cd erpnext-stg
-    bench get-app erpnext https://github.com/frappe/erpnext \
+    bench get-app erpnext https://github.com/frappe/erpnext --branch master \
         2>&1 | tee --append ../erpnext-stg-install.log
 
     # You will be prompted for the mysql root password and to set the Administrator password
