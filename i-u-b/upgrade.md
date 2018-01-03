@@ -25,6 +25,7 @@ Assuming the stage environment is the same version as production (or very close)
       --with-public-files /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[files.tar] \     
       --with-private-files /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[private_files.tar] \
        /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[sql.gz]
+    
     # confirm the database schema matches the code, clear all cache and restart
     bench migrate
     bench clear-cache
