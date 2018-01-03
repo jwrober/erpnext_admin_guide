@@ -17,12 +17,14 @@ First start with a [good full backup](backup#Full "Backing up ERPNext") of the d
     
 Assuming the stage environment is the same version as production (or very close), restore the production database to the stage environment. Before you run the commands below, ensure that the `encryption_key` value in  `sites/[site name]/site_config.json` from the production site is also in the stage `site_config.json`. Otherwise you will get an error on restart.
 
+**NOTE**: For some reason the admin guide does not understand, `bench` does not handle relative paths very well. Be sure to fully qualify all of the path's you use for the `bench restore` command.
+
     cd erpnext-stg
     # restore the prod database snapshot taken, you will be prompted for the mysql root pwd
-    bench --force restore                                                                               \
-        --with-public-files ../erpnext-prd/sites/[site name]/private/backups/[files.tar file]           \     
-        --with-private-files ../erpnext-prd/sites/[site name]/private/backups/[private_files.tar file]  \
-        ../erpnext-prd/sites/[site name]/private/backups/[sql.gz file]
+    bench --force restore \
+      --with-public-files /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[files.tar] \     
+      --with-private-files /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[private_files.tar] \
+       /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[sql.gz]
     # confirm the database schema matches the code, clear all cache and restart
     bench migrate
     bench clear-cache
