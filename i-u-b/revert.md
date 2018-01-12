@@ -6,15 +6,17 @@ ERPNext is not really designed to be reverted or back-ported. However, with some
 
 Assuming the steps to take a **full backup** were completed from [3.4 Backing up ERPNext](backup#Full "Backing up ERPNext"), follow these steps to revert to the backed up state.
 
+**NOTE**: For some reason the admin guide does not understand, `bench` does not handle relative paths very well. Be sure to fully qualify all of the path's you use for the `bench restore` command.
+
     sudo su - erpnext
     # you should be in the root of the erpnext user home directory
-    rm -Rf frappe-bench
+    rm -Rf [bench name]
     tar -xvf erp-prd-backup-[yyyy-mm-dd].tar.bz2
-    cd frappe-bench
+    cd [bench name]
     # find the latest backup files in sites/[site name]/private/backups/
     # you will be prompted for the mysql pwd
     bench --force restore \
-        sites/[site name]/private/backups/[sql.gz file]
+        /home/erpnext/[bench name]/sites/[site name]/private/backups/[sql.gz file]
     bench migrate
     bench clear-cache
     bench clear-website-cache

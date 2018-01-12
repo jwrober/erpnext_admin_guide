@@ -31,10 +31,10 @@ Confirm by running
 
 and see if the server is running.
 
-Another thing that can cause `nginx` to not run is that the `bench` that ERPNext is installed in has not been setup for production mode. With the `erpnext` as a member of the `sudo` group, run this command:
+This also happens if the `bench` was not setup for production mode.  The `erpnext` will need to be in the `sudo` group first. If it is, then run this command to setup the `bench` for production mode:
 
     sudo bench setup production --yes erpnext
 
-You should now see `nginx` running.<br /><br />
+You should see `nginx` running after this command is run.<br /><br />
 
 Home: [Table of Contents](../ "Table of Contents") | Previous: [3.2 Installing ERPNext](install "Installing ERPNext") | Next: [3.2.2 Installing Development Side by Side](install-dev "Installation of a Side by Side Development Environment") 
