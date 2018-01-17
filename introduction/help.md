@@ -2,7 +2,7 @@ Home: [Table of Contents](../ "Table of Contents") | Previous: [2.1 Overview](ov
 
 ## 2.2 Getting Help
 
-There are a number of places to get help with your ERPNext installation. 
+There are a number of places to get help with your ERPNext installation.
 
 * The first and obvious place to get help is the discuss forum at [https://discuss.erpnext.com/](https://discuss.erpnext.com/ "Discuss ERPNext"). Sign up and join the conversation!
 

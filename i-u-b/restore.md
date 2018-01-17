@@ -9,7 +9,7 @@ Assuming you have a good [simple backup](backup#Simple "Backing Up ERPNext"), yo
     sudo su - erpnext
     cd [bench name]
     bench --force restore \
-      --with-public-files /home/erpnext/[bench name]/sites/[site name]/private/backups/[files.tar] \          
+      --with-public-files /home/erpnext/[bench name]/sites/[site name]/private/backups/[files.tar] \
       --with-private-files /home/erpnext/[bench name]/sites/[site name]/private/backups/[private-files.tar] \
       /home/erpnext/[bench name]/sites/[site name]/private/backups/[sql.gz file]
 

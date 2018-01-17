@@ -2,7 +2,7 @@ Home: [Table of Contents](../ "Table of Contents") | Previous: [3.1.4 Wonderful 
 
 ### 3.1.5 Software Packages Installed
 
-During [Installation](install "Installing ERPNext") the `install.py` Python script will install a collection of software dependencies. 
+During [Installation](install "Installing ERPNext") the `install.py` Python script will install a collection of software dependencies.
 
 Here is the alphabetical order listing for all installations (common):
 
@@ -12,7 +12,7 @@ Here is the alphabetical order listing for all installations (common):
 * frappe bench
 * frappe framework
 * git
-* mariadb 
+* mariadb
 * nginx
 * nodejs
 * npm
@@ -27,21 +27,21 @@ Here is a alphabetical order listing for Debian based Linux distributions:
 
 * build-essential
 * dnsmasq
-* fontconfig 
+* fontconfig
 * htop
 * libcrypto++-dev
 * libffi-dev
 * libfreetype6-dev
-* libjpeg62-turbo-dev 
-* libjpeg8-dev 
+* libjpeg62-turbo-dev
+* libjpeg8-dev
 * liblcms2-dev
 * libmariadbclient-dev
 * libssl-dev
 * libtiff4-dev
 * libtiff5-dev
 * libwebp-dev
-* libxext6 
-* libxrender1 
+* libxext6
+* libxrender1
 * libxslt1-dev
 * libxslt1.1
 * ntp
@@ -58,9 +58,9 @@ Here is a alphabetical order listing for Debian based Linux distributions:
 * tcl8.5-dev
 * tk8.5-dev
 * vim
-* xfonts-75dpi 
+* xfonts-75dpi
 * xfonts-base
-* zlib1g-dev 
+* zlib1g-dev
 
 Here is the alphabetical order listing for Red Hat based Linux distributions:
 
@@ -69,7 +69,7 @@ Here is the alphabetical order listing for Red Hat based Linux distributions:
 * epel-release
 * freetype-devel
 * groupinstall 'Development Tools'
-* lcms2-devel 
+* lcms2-devel
 * libXext
 * libXrender
 * libffi-devel
