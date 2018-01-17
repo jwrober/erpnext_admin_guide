@@ -1,4 +1,4 @@
-Home: [Table of Contents](../ "Table of Contents") | Previous: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting") | Next: [3.3 Upgrading ERPNext](upgrade "Upgrading ERPNext") 
+Home: [Table of Contents](../ "Table of Contents") | Previous: [3.2.1 Installation Troubleshooting](install-trouble "Installation Troubleshooting") | Next: [3.3 Upgrading ERPNext](upgrade "Upgrading ERPNext")
 
 ### 3.2.2 Installation of a Side by Side Development Environment
 
@@ -14,7 +14,7 @@ During [installation](install "Installing ERPNext") we remove the `sudo` rights 
 
 **NOTE:** For these steps we are going to assume you are installing a Stage environment called `eprnext-stg`. This will be the bench name and part of the site name. Remember that the site name needs to be a fully qualified domain name (such as `erpnext-stg.domain.com`) to work for name based resolution. This is why we set production with a fully qualified domain name.
 
-Now become the `erpnext` user to setup a new bench. 
+Now become the `erpnext` user to setup a new bench.
 
     sudo su - erpnext
 
@@ -22,7 +22,7 @@ Now become the `erpnext` user to setup a new bench.
     # Ensure that bench is setup to get the code from the master branch
     bench switch-to-master
     bench init erpnext-stg --verbose 2>&1 | tee erpnext-stg-install.log
-    
+
     # Now get the erpnext code from master branch
     cd erpnext-stg
     bench get-app erpnext https://github.com/frappe/erpnext --branch master \

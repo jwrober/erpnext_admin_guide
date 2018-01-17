@@ -9,7 +9,7 @@ There are four types of reporting available for ERPNext. Three of them are them 
 1. Internal Python "Script" Reports
 1. External Business Intelligence (BI) Engine based Reports.
 
-Numbers 1, 2 and 4 are great for non-programmer type administrators. Python "Script" based reports are great and integrated into the environment, however you have to have a understanding of python, the frappe framework and programming in order to create these kinds of reports. They also need to be installed into a "custom application" so that upgrades to ERPNext don't impact your changes. These kinds of reports are out of the scope of the admin guide. 
+Numbers 1, 2 and 4 are great for non-programmer type administrators. Python "Script" based reports are great and integrated into the environment, however you have to have a understanding of python, the frappe framework and programming in order to create these kinds of reports. They also need to be installed into a "custom application" so that upgrades to ERPNext don't impact your changes. These kinds of reports are out of the scope of the admin guide.
 
 The ERPNext User Manual has another good overview of the three internal reporting types here:
 

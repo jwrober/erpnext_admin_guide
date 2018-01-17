@@ -14,7 +14,7 @@ JasperSoft has some great documentation here - <https://community.jaspersoft.com
 
 ### 21.3.2 Installation of Jasper Reports Custom ERPNext App
 
-There are two versions of  the "Jasper EPNext Report" custom application. The original version was written by `saguas` and placed on GitHub here - <https://github.com/saguas/jasper_erpnext_report>. The repository has become stale (last commit was in 09/2016) and `consoleerp` has forked the original and made updates. The fork is on GitHub here - <https://github.com/consoleerp/jasper_erpnext_report>. We will install and use the `consoleerp` fork as it is more maintained. 
+There are two versions of  the "Jasper EPNext Report" custom application. The original version was written by `saguas` and placed on GitHub here - <https://github.com/saguas/jasper_erpnext_report>. The repository has become stale (last commit was in 09/2016) and `consoleerp` has forked the original and made updates. The fork is on GitHub here - <https://github.com/consoleerp/jasper_erpnext_report>. We will install and use the `consoleerp` fork as it is more maintained.
 
 Recall that during [installation](../i-u-b/install "Installing ERPNext") that we remove `sudo` rights from the `erpnext` user. Follow these steps as another user with `sudo` rights to get started:
 
@@ -24,12 +24,12 @@ Recall that during [installation](../i-u-b/install "Installing ERPNext") that we
     sudo python -m pip install --upgrade pip setuptools
     sudo python -m pip install --upgrade cython
     sudo python -m pip install --upgrade pyjnius
-    
+
     # Add JAVA_HOME to non-interactive, non-login shell environment
     echo -e """JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")""" | sudo \
         tee --append /etc/environment
     echo -e "JDK_HOME=$JAVA_HOME" | sudo tee --append /etc/environment
-    
+
     # Add JAVA variables for interactive, login shell environments
     #   Copy & Paste from sudo ... to EOF" into putty window
     sudo bash -c "cat <<EOF > /etc/profile.d/java.sh
@@ -39,9 +39,9 @@ Recall that during [installation](../i-u-b/install "Installing ERPNext") that we
     export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
     export JDK_HOME=$JAVA_HOME
     export PATH=$PATH:$JAVA_HOME/bin
-    
+
     EOF"
-    
+
     # Restart the server
     sudo shutdown -r now
 
@@ -57,8 +57,8 @@ Now install the application
     bench get-app jasper_erpnext_report https://github.com/consoleerp/jasper_erpnext_report.git \
         2>&1 | tee jasper-reports-install.log
     bench install-app jasper_erpnext_report 2>&1 | tee --append jasper-reports-install.log
-    
-    # This step will upgrade your environment to latest code along with installing the 
+
+    # This step will upgrade your environment to latest code along with installing the
     #   python requirements for jasper_erpnext_report.
     bench update --requirements 2>&1 | tee --append jasper-reports-install.log
 
@@ -80,7 +80,7 @@ The out of box configuration in Role Permissions Manager is out dated a bit.  Op
 
 1. Select **JasperServerConfig**. Add a new role for System Manager and set to be the same as the out of box Administrator role.
 
-1. Select **Jasper Reports**. 
+1. Select **Jasper Reports**.
     * Add a new role for System Manager Levels 0, 1 and 2 to be the same as the out of box Administrator role.
     * Remove the out of box roles for Accounts Manager Levels 0 and 2.
 
@@ -88,7 +88,7 @@ What this will do is lock down the permissions to just the System Manager role t
 
 From the User menu, select **Reload** to clear the cache.  Then open Jasper Erpnext Report
 
-> Explore > Jasper Erpnext Report 
+> Explore > Jasper Erpnext Report
 
 #### 21.3.2.2 Setup MariaDB for Reporting
 
@@ -103,13 +103,13 @@ It is a best practice to run reports with a "reporting user". You can read this 
 
     # Logon to MariaDB
     mysql -u root -p
-    
+
     # Create the user
     CREATE USER 'erpnext-reports'@'%' IDENTIFIED BY '[password]';
     GRANT SELECT ON *.* to 'erpnext-reports'@'%';
     FLUSH PRIVILEGES;
     exit;
-    
+
     # Now test the new user
     mysql -u erpnext-reports -p
 

@@ -14,7 +14,7 @@ Yes, the admin guide purposefully put that in all caps with bold text to make a 
 The developers of ERPNext use a three-numeral version system in this format `[major version].[minor version].[patch level]`. So an upgrade of one major version to another would be like going from v7.x to v8.x or a really big jump would be going from v7.x to v9.x.  There are a ton of things that can happen when doing a major upgrade! This is where doing work in a [non-production environment](install-dev "Installation of a Side by Side Development Environment") is really needed. The admin guide has NEVER seen anyone complete a major upgrade without issue. There are too many factors to consider.
 
 First start with a [good full backup](backup#Full "Backing up ERPNext") of the development system and a [simple backup](backup#Simple "Backing up ERPNext") of the production system.
-    
+
 Assuming the stage environment is the same version as production (or very close), restore the production database to the stage environment. Before you run the commands below, ensure that the `encryption_key` value in  `sites/[site name]/site_config.json` from the production site is also in the stage `site_config.json`. Otherwise you will get an error on restart.
 
 **NOTE**: For some reason the admin guide does not understand, `bench` does not handle relative paths very well. Be sure to fully qualify all of the path's you use for the `bench restore` command.
@@ -22,10 +22,10 @@ Assuming the stage environment is the same version as production (or very close)
     cd erpnext-stg
     # restore the prod database snapshot taken, you will be prompted for the mysql root pwd
     bench --force restore \
-      --with-public-files /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[files.tar] \     
+      --with-public-files /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[files.tar] \
       --with-private-files /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[private_files.tar] \
        /home/erpnext/[prd bench name]/sites/[site name]/private/backups/[sql.gz]
-    
+
     # confirm the database schema matches the code, clear all cache and restart
     bench migrate
     bench clear-cache
@@ -36,7 +36,7 @@ At this point, you should go into the stage environment user interface and ensur
 
 Once you are comfortable that the copy down procedure worked, now it's time to upgrade stage.
 
-    bench update --upgrade
+    bench update
     bench clear-cache
     bench clear-website-cache
     bench restart

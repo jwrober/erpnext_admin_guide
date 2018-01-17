@@ -1,4 +1,4 @@
-Home: [Table of Contents](../ "Table of Contents") | Previous: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting") | Next: [3.5 Restoring from a Previous Backup](restore "Restoring from a Previous Backup") 
+Home: [Table of Contents](../ "Table of Contents") | Previous: [3.3.4 Upgrade Troubleshooting](upgrade-trouble "Upgrade Troubleshooting") | Next: [3.5 Restoring from a Previous Backup](restore "Restoring from a Previous Backup")
 
 ## 3.4 Backing Up ERPNext
 

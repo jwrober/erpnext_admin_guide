@@ -1,10 +1,10 @@
-Home: [Table of Contents](../ "Table of Contents") | Previous: [1.4 Typography](../preface/typography "Typography") | Next: [2.2 Getting Help](help "Getting Help") 
+Home: [Table of Contents](../ "Table of Contents") | Previous: [1.4 Typography](../preface/typography "Typography") | Next: [2.2 Getting Help](help "Getting Help")
 
 # 2.0 Introduction
 
 ## 2.1 Overview of ERPNext
 
-This chapter provides the reader of an overview of the ERPNext platform. 
+This chapter provides the reader of an overview of the ERPNext platform.
 
 From the ERPNext Documentation website at [https://erpnext.org/docs](https://erpnext.org/docs "ERPNext Docs") is this excerpt:
 

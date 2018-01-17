@@ -13,7 +13,7 @@ Assuming the steps to take a **full backup** were completed from [3.4 Backing up
     rm -Rf [bench name]
     tar -xvf erp-prd-backup-[yyyy-mm-dd].tar.bz2
     cd [bench name]
-    
+
     # find the latest backup files in sites/[site name]/private/backups/
     # you will be prompted for the mysql pwd
     bench --force restore \

@@ -12,5 +12,5 @@ To be proficient in the tasks that this book describes, the reader needs to have
     * If you plan to do any report writing, having a good understand of `SELECT`, `JOIN`, `WHERE` and other clauses for running queries is going to be handy.<br /><br />
 * `nginx` administration
     * This book gives some aid and recipes for tasks, but understanding the underlying architecture of the web server will come in handy.<br /><br />
-    
+
 Home: [Table of Contents](../ "Table of Contents") | Previous: [1.2 Audience](audience "Audience") | Next: [1.4 Typography](typography "Typography")
