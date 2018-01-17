@@ -14,6 +14,8 @@ During [installation](install "Installing ERPNext") we remove the `sudo` rights 
 
 **NOTE:** For these steps we are going to assume you are installing a Stage environment called `eprnext-stg`. This will be the bench name and part of the site name. Remember that the site name needs to be a fully qualified domain name (such as `erpnext-stg.domain.com`) to work for name based resolution. This is why we set production with a fully qualified domain name.
 
+**NOTE:** Recall that during [installation](install "Installing ERPNext") on RHEL/CentOS that the base bench is placed in `/home/root`. Make sure you are there before you run these commands. Otherwise for Debian based distributions you should be in `/home/erpnext`.
+
 Now become the `erpnext` user to setup a new bench.
 
     sudo su - erpnext
