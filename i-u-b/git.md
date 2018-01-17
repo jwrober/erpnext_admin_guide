@@ -1,4 +1,4 @@
-Home: [Table of Contents](../ "Table of Contents") | Previous: [3 Frappe Bench](bench "Frappe Bench") | Next: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx") 
+Home: [Table of Contents](../ "Table of Contents") | Previous: [3 Frappe Bench](bench "Frappe Bench") | Next: [3.1.4 Wonderful World of nginx](nginx "The Wonderful World of nginx")
 
 ### 3.1.3 The Wonderful World of git
 

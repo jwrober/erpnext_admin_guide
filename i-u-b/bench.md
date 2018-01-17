@@ -1,4 +1,4 @@
-Home: [Table of Contents](../ "Table of Contents") | Previous: [2.2 Getting Help](../introduction/help "Getting Help") | Next: [3.1.3 Wonderful World of git](git "The Wonderful World of git") 
+Home: [Table of Contents](../ "Table of Contents") | Previous: [2.2 Getting Help](../introduction/help "Getting Help") | Next: [3.1.3 Wonderful World of git](git "The Wonderful World of git")
 
 # 3.0 ERPNext Installation, Upgrades and Backups
 
@@ -32,7 +32,7 @@ Once you have logged on to the server and become the `erpnext` user, you are rea
     * **bin** -- `python` executables and scripts
     * **include** -- Links to python includes
     * **lib** -- Python libraries
-    * **local** -- Python local 
+    * **local** -- Python local
     * **selenium** -- Web [browser automation](http://www.seleniumhq.org/ "Selenium Website") tool
     * **share** -- `man` pages
     * **src** -- Other utilities like `mysqlclient` and `pdfkit`.
@@ -50,7 +50,7 @@ Once you have logged on to the server and become the `erpnext` user, you are rea
 <a name="Cmd">&nbsp;</a>
 ### 3.1.2 Frappe Bench Commands
 
-Administrators need to be comfortable with the frappe `bench` command structure. 
+Administrators need to be comfortable with the frappe `bench` command structure.
 
 There is a [cheat sheet](https://frappe.io/docs/user/en/bench/resources/bench-commands-cheatsheet "Frappe Bench Commands Cheetsheet") available that is a good start.<br /><br />
 

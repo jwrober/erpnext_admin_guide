@@ -46,5 +46,4 @@ Select "Report Design" from the list of perspectives.
 
 Now you are ready to build some reports! Read the [documentation](https://community.jaspersoft.com/project/jaspersoft-studio/resources) online.<br /><br />
 
-Home: [Table of Contents](../ "Table of Contents") | Previous: [21.3 Installation of a Business Intelligence Engine](install-bi "Installation of a Business Intelligence Engine") | Next: 
- 
+Home: [Table of Contents](../ "Table of Contents") | Previous: [21.3 Installation of a Business Intelligence Engine](install-bi "Installation of a Business Intelligence Engine") | Next:

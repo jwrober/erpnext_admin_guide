@@ -32,11 +32,11 @@ It is also a good administrative task to ensure that the `/etc/resolv.conf` file
     #Google IPv4 nameservers
     nameserver 8.8.8.8
     nameserfer 8.8.4.4
-    
+
     #Google IPv6 nameservers
     nameserver 2001:4860:4860::8888
     nameserver 2001:4860:4860::8844
-    
+
     #Setup your local domain
     domain [domain name]
 
@@ -56,7 +56,7 @@ ERPNext can be installed on the following OS's:
 
 For production and stage environments, the admin guide recommends Debian 8 because "it just works". For development environments where a nice user interface on the "server" is wanted then the admin guide recommends Ubuntu 16.04 "Desktop" edition or MacOS 10. Windows is another option for a development environment, however you cannot run the code on Windows so it makes development **a lot** harder.
 
-**NOTE:** The admin guide recommends that all installation work is done with a `sudo` privileged user. During installation, we will create the required user to run ERPNext, however we will not install as that user. 
+**NOTE:** The admin guide recommends that all installation work is done with a `sudo` privileged user. During installation, we will create the required user to run ERPNext, however we will not install as that user.
 
 **NOTE:** These steps assume you are starting from a freshly installed server. Your mileage will vary if you are attempting to run these steps on an existing server. The easy install script is **opinionated** meaning it makes a large number of assumptions as to how you want to install the system. The admin guide recommends the using the install script because the Ansible playbooks used do a ton of work very fast saving you a lot of time. The assumptions made are fine for the vast majority of installs.
 
@@ -74,7 +74,7 @@ For Debian based distributions (Debian, Ubuntu) start by installing a collection
 
     usermod -aG [sudo group name] [your user id] # Debian Only
     exit                                         # Debian Only
-    
+
     # Debian Only - Logoff and back in to set your user id as sudoer
 
 For Red Hat based distributions (CentOS) start by installing a collection of software dependencies. These steps assume you are running CentOS 7 minimal install and created an Administrator level user during installation.
@@ -90,7 +90,7 @@ For Red Hat based distributions (CentOS) start by installing a collection of sof
     # Limits file for ERPNext
     *     soft   nofile  1048576
     *     hard   nofile  1048576
-    
+
     EOF"
 
     # Restart the server
@@ -101,8 +101,8 @@ The install script installs NodeJS 6.x.  We want the latest stable. For all oper
     # Debian/Ubuntu based - Get NodeJS from its own repository
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
     sudo apt-get install -y nodejs
-    
-    # RHEL/CentOS based - Get NodeJS from its own repository 
+
+    # RHEL/CentOS based - Get NodeJS from its own repository
     curl -sL https://rpm.nodesource.com/setup_8.x | sudo -E bash -
     sudo yum install -y nodejs
 
@@ -114,17 +114,34 @@ Create the `erpnext` user. Run these commands:
 
     # Create a password for the user
     sudo passwd erpnext
-    
+
     # Become the erpnext user
     sudo su - erpnext
-    
+
     # Test sudo privileges
     sudo apt-get update  # Debain/Ubuntu
-    
+
     or
-    
+
     sudo yum update -y   # RHEL/CentOS
 
+The easy install script will install MariaDB 10.2. However the out of box configuration for the database engine has a configuration issue we need to correct before the ERPNext installation.  Follow these commands to set that up now.
+
+    sudo mkdir -p /etc/mysql/conf.d
+    sudo bash -c "cat <<EOF > /etc/mysql/conf.d/z-erpnext.cnf
+    #
+    # Begin /etc/mysql/conf.d/z-erpnext.cnf
+    #
+    # MariaDB Configuration for ERPNEXT
+    #
+
+    [mysqld]
+    pid-file        = /var/run/mysqld/mysqld.pid
+    socket          = /var/run/mysqld/mysqld.sock
+
+    # End /etc/mysql/conf.d/z-erpnext.cnf
+    EOF"
+	
 Download and run the install script.
 
     # Get the install.py file
@@ -133,7 +150,7 @@ Download and run the install script.
 
     # Confirm you can ping the site
     ping [site name].[domain]
-    
+
     # For RHEL/CentOS based installs, create a needed directory
     sudo install -m 755 -o erpnext -g erpnext -d /home/root
 
@@ -148,7 +165,7 @@ Assuming that everything went great and there is no need for [troubleshooting](i
 
     PLAY RECAP**********************************************************************
     localhost                    : ok=77    changed=43    unreachable=0    failed=0
-    
+
     Frappe/ERPNext has been successfully installed!
 
 There are some cleanup things for RHEL/CentOS. Due to an issue with Ansible not able to determine the `sudo` user, the `install.py` script will install `bench` and ERPNext into the `/home/root` directory. We leave `bench` there, but move ERPNext to where we want it.
@@ -160,7 +177,7 @@ There are some cleanup things for RHEL/CentOS. Due to an issue with Ansible not 
     sudo rm -Rf /home/root/[bench name used at install]
     sudo chmod -R 755 /home/erpnext
     sudo chown -R erpnext:erpnext /home/erpnext
-    
+
     # Become the erpnext user again
     sudo su - erpnext
 
@@ -198,7 +215,7 @@ Lastly we need to check on a few things to ensure they are running and installed
 
     # Confirm socket.io is running on port 8000 as a python process
     sudo netstat -tulpn | grep 8000
-    
+
     # Confirm NodeJS is running on port 9000
     sudo netstat -tulpn | grep node
 
