@@ -45,16 +45,17 @@ It is also a good administrative task to ensure that the `/etc/resolv.conf` file
 ERPNext can be installed on the following OS's:
 
 * Debian 7 "Wheezy"
-* Debian 8 "Jessie" -- Debian 9 "Stretch" is not supported by the easy install script at this time. Debian 8 is a *very* stable operating system and is the **recommended choice**.
+* Debian 8 "Jessie"
+* Debian 9 "Stretch" -- Debian is a *very* stable operating system and is the **recommended choice**, especially for production environments.
 * Ubuntu Server 14.04.x LTS "Trusty Tahr"
 * Ubuntu Server 16.04.x LTS "Xenial Xerus" -- Ubuntu 17.x (short term support) is not supported by the easy install script.
-* CentOS 7 -- This is also a very stable operating system. If you prefer a RHEL variant this is the choice for you.
+* CentOS 7 -- This is also a very stable operating system. If you prefer a RHEL variant for your production environment, this is the choice for you.
 * MacOS 10.9 "Mavericks"
 * MacOS 10.10 "Yosemite"
 * MacOS 10.11 "El Capitan"
 * MacOS 10.12 "Sierra"
 
-For production and stage environments, the admin guide recommends Debian 8 because "it just works". For development environments where a nice user interface on the "server" is wanted then the admin guide recommends Ubuntu 16.04 "Desktop" edition or MacOS 10. Windows is another option for a development environment, however you cannot run the code on Windows so it makes development **a lot** harder.
+For production and stage environments, the admin guide recommends Debian 9 because "it just works". For development environments where a nice user interface on the "server" is wanted then the admin guide recommends Ubuntu 16.04 "Desktop" edition or MacOS 10. Windows is another option for a development environment, however you cannot run the code on Windows so it makes development **a lot** harder.
 
 **NOTE:** The admin guide recommends that all installation work is done with a `sudo` privileged user. During installation, we will create the required user to run ERPNext. The ERPNext user will have elevated privileges during installation and those rights will be removed at the end.
 
@@ -83,7 +84,7 @@ For Red Hat based distributions (CentOS) start by installing a collection of mis
     sudo yum update -y
     sudo yum install -y curl wget net-tools postfix vim
 
-The install script installs NodeJS 6.x, which works for all operating systems except Debian 7 "Wheezy".  We want the latest stable 8.x. For all supported operating systems, install `NodeJS` from their respective repositories. Debian 7 "Wheezy" users will skip this and install NodeJS 6.x from the easy install script later.
+The install script installs NodeJS 6.x. We want the latest stable 8.x, which works for all operating systems except Debian 7 "Wheezy". For all supported operating systems, install `NodeJS` from their respective repositories. Debian 7 "Wheezy" users will skip this and install NodeJS 6.x from the easy install script later.
 
     # Debian/Ubuntu based - Get NodeJS from its own repository
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
@@ -145,7 +146,7 @@ Sometimes `install.py` leaves some files in the `bench` we created that we want 
 
 If you want to setup the environment to development mode, follow these instructions <https://frappe.io/docs/user/en/guides/app-development/how-enable-developer-mode-in-frappe>.
 
-Now remove `sudoer` rights form the `erpnext` user for Debain/Ubuntu only. Due to the `/home/root` installation issue on RHEL/CentOS for `bench`, the erpnext user has to stay a `sudoer`.
+Now remove `sudoer` rights form the `erpnext` user.
 
     sudo usermod -G "" erpnext
 
@@ -156,7 +157,7 @@ Lastly we need to check on a few things to ensure they are running and installed
     sudo redis-server -v        # Should be >= 3.2.x
 
     # Confirm NodeJS and npm
-    sudo node -v                # Should be >= 8.9.x
+    sudo node -v                # Should be >= 8.9.x for all except Debian 7
     sudo npm -v                 # Should be >= 5.6.x
 
     # Confirm mysql/mariadb is running on port 3306
