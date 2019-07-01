@@ -42,7 +42,7 @@ Next: [1.1 Foreward](preface/foreward "Foreward")
     * 3.5 [Restoring from a Previous Backup](i-u-b/restore)
 * 4 Setup
     * 4.1 [The Setup Wizard](setup/setup)
-    * 4.2 [Domans](setup/domains)
+    * 4.2 [Domains](setup/domains)
 * 5 Explore > Setup > Users
     * 5.1 User
     * 5.2 Role
