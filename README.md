@@ -11,12 +11,12 @@ Read this guide online at <https://jwrober.github.io/erpnext_admin_guide/>
 
 The GitHub repository is at <https://github.com/jwrober/erpnext_admin_guide>
 
-Next: [1.1 Foreward](preface/foreward "Foreward")
+Next: [1.1 Foreword](preface/foreword "Foreword")
 
 ## Table of Contents
 
 * 1 Preface
-    * 1.1 [Foreward](preface/foreward "Foreward")
+    * 1.1 [Foreword](preface/foreword "Foreword")
     * 1.2 [Audience](preface/audience "Audience")
     * 1.3 [Prerequisites](preface/prerequisites "Prereguisites")
     * 1.4 [Typography](preface/typography "Typography")
@@ -241,4 +241,4 @@ Now that you have read to the bottom of the current table of contents, you will 
 
 We will work on those at a future date! As you can see, there is a lot to fill in yet.<br /><br />
 
-Next: [1.1 Foreward](preface/foreward "Foreward")
+Next: [1.1 Foreword](preface/foreword "Foreword")
